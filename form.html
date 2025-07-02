@@ -1,11 +1,54 @@
-
 <!DOCTYPE HTML>
-<html>
-    <head>
-        <title>Simple Form</title>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width initial-scale=1.0">
+    <title>Surveyform</title>
+    <link rel="stylesheet" href="styles.css" />
     </head>
     <body>
-        <p>MY HTML NOW</p>
-    </body>
-    </html>
-</html>
+      <h1 id="title">Survey Form of FreeCodeCamp</h1>
+      <p id="description">Your participation in this survey is greatly appreciated!</p>
+      <form method="post" action='https://register-demo.freecodecamp.org' id="survey-form">
+      <fieldset>
+        <label id="name-label" for="name">Name: <input id="name" placeholder="Enter your name." name="name" type="text" required></label>
+        <label id="email-label" for="email">Email: <input placeholder="Enter your email." id="email" name="email" type="email" required/></label>
+        <label id="number-label" for="number">Age: <input id="number" name="number" placeholder="Age between 13 and 65." type="number" max="65" min="13"/></label>
+
+        </fieldset>
+        <fieldset>
+          <label for="dropdown">How did you here about us?
+            <select id="dropdown">
+            <option vlaue="">(Select Here)</option>
+            <option value="instagram">From Instagram</option>
+  <option value="tiktok">From TikTok</option>
+  <option value="facebook">From FaceBook</option>
+  <option value="other">Other</option>
+              </select>
+          </fieldset>
+<fieldset>
+   <legend> Which platform do you use the most?</legend>
+   <label for="Facebook"><input class="inline" name="platform" id="Facebook" value="Facebook" type="radio" checked/>Facebook</label>
+   <label for="Instagram"><input class="inline" name="platform" value="Instagram" id="Instagram" type="radio">Instagram</label>
+   <label for="TikTok"><input name="platform" class="inline" value="TikTok" id="TikTok" type="radio"/>TikTok</label>
+   <label for="Other"><input class="inline" value="Other" id="Other" name="platform" type="radio"/>Other</label>
+</fieldset>
+<fieldset>
+  <legend>Which way would help you learn fast?</legend>
+  <label for="flashcards"><input class="inline" value="flashcards" id="flashcards" name="flashcards" type="checkbox"/>Flashcards</label>
+  <label for="quizes"><input class="inline" id="quizes" value="quizes" name="quizes" type="checkbox"/>Quizes</label>
+  <label for="youtube"><input class="inline" id="youtube" name="youtube" value="youtube" type="checkbox"/>Youtube Videos</label>
+  <label for="assistance"><input class="inline" id="assistance" name="assistance" value="assistance" type="checkbox"/>Personal Assistances</label>
+  <label for="collaborate"><input class="inline" id="collaborate" value="collaborate" name="collaborate" type="checkbox"/>Collaborative Learnings</label>
+  </fieldset>
+  <fieldset>
+    <label for="explanation">What areas should FreeCodeCamp improve? Explain.
+    <textarea placeholder="I think it should improve..." name="explanation" id="explanation" rows="3" cols="30">
+      </textarea>
+      </label>
+    </fieldset>
+    <input id="Submit" type="submit" value="Submit"/>
+
+      </form>
+      </body>
+  </html>

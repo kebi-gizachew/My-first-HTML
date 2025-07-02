@@ -1,0 +1,21 @@
+# Ignore system files
+.DS_Store
+Thumbs.db
+
+# Ignore Python cache (if using Python)
+pycache/
+*.py[cod]
+
+# Ignore C++ compiled files (if using C++)
+*.out
+*.exe
+*.o
+
+# Ignore node_modules if using Node.js
+node_modules/
+
+# Ignore environment files
+.env
+
+# Ignore log files
+*.log
